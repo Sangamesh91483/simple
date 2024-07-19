@@ -1,0 +1,158 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgb(225, 59, 86);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.menu-icon {
+    display: none;
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(220, 112, 130);
+    
+}
+
+.left {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.left-align {
+    width: 100%;
+}
+
+.left-align h1 {
+    margin: 0;
+}
+
+.left-align pre {
+    margin: 10px 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.click-button {
+    padding: 10px 20px;
+    background-color: #ea2571;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.right-image {
+    width: 100%;
+    max-width: 900px; /* Adjust max-width as needed */
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, .right-image {
+        max-width: 100%;
+    }
+
+    .right-image {
+        /* max-width: 150px; Adjust max-width for mobile view */
+    }
+
+    .left {
+        order: 2;
+    }
+
+    .right-image {
+        order: 1;
+        margin-bottom: 20px; /* Space between image and text */
+    }
+}
+@media (max-width:1007px){
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, .right-image {
+        max-width: 100%;
+    }
+
+    .right-image {
+        /* max-width: 150px; Adjust max-width for mobile view */
+    }
+
+    .left {
+        order: 2;
+    }
+
+    .right-image {
+        order: 1;
+        margin-bottom: 20px; /* Space between image and text */
+    }
+
+}
